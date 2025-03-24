@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script>
+        function toggleAllParagraphs() {
+            var paragraphs = document.querySelectorAll('.hidden');
+            var showButton = document.getElementById("toggleButton");
+            var allVisible = Array.from(paragraphs).every(p => p.style.display === "block");
+
+            paragraphs.forEach(paragraph => {
+                paragraph.style.display = allVisible ? "none" : "block";
+            });
+            showButton.innerText = allVisible ? "Show More" : "Show Less"; 
+        }
+    </script>
+</head>
+<body>
+  
+  <nav>
+  <a href="family.html">My Family</a> 
+  <a href="likes.html">My Likes</a> 
+  <a href="friends.html">My Friends</a> 
+  <a href="places.html">My Places</a>
+</nav>
+
+    <h1>About Me</h1>
+<br>
+    <img src="c:\Users\Jebi\Downloads\JEBONG.jpg" alt="JEBONG" />
+<br/>
+
+    <p class="hidden">I am Jewel Kesmit Mets C. Baciles, a 18 yr old student in Bataan Peninsula State University taking Bachelor of Science in Information Technology majoring in Network and Web Application. I was born and raised in Sito Duhat Saysain, Bagac Bataan. I was the youngest out of the four children my parents have. Among my siblings, I am the peculiar one maybe because I’m gay or maybe because I am known to be the brightest child. My pronouns are they/them and I prefer not to name my sexuality. There are so many things that I take interest in but not enough to be disgustingly educated about it.</p>
+
+    <p class="hidden">When I was a kid, my dream was to be a doctor or maybe a lawyer; they are the first professions that my younger self looked up to. They were the most noble profession in my eyes back in the day, and they still are, but they were not my dreams anymore. As I grew old, I learned that it doesn’t matter if I landed a noble or a humble profession as long as I am happy doing the path I choose, that would be enough. I believe the young little me would still be proud of who I am today; that little rascal loves creating and taking things apart; technology fascinates her. I only wish to keep making her proud, and when the time comes, I will heal all the wounds and scars she had all these years.</p>
+
+    <p class="hidden">I used to be an athlete; I’m not that good, but I wouldn’t say that I’m bad either. My first sport was basketball; it was my first love. I used to get scolded for playing under the scorching sun instead of taking my afternoon nap. The next one was badminton. When I turned 6, I developed a habit of hitting things; to keep it under control, my family suggested trying a sport that involves hitting, and then bam! I became a badminton player in my school. I played badminton until the first year of high school. In my second year of high school, I randomly became a sepak player. I really can’t remember how I got cast as one, but I grew fond of it. Sepak takraw got me to play in the provincial meet. It was one of the best experiences I had in high school.</p>
+
+    <p class="hidden">After giving up my so-called athlete career, I decided that I wanted to join a band, so I did. I joined a marching band in my town, took some lessons, learned how to read musical notes, and finally, the time for choosing the instrument you want came. I was torn between a clarinet, a trombone, and a saxophone. I wanted the clarinet because it was the original instrument that I was aiming for, but I saw the music sheets they had, and goodness, it was terrifying. Trombone because my brother was once a member of the said marching band and that was his instrument; he was already working, so he isn’t playing anymore. My mother thought it would be a waste if his instrument would only be in the basement. And lastly, the saxophone, it was never my option because I think it was inconvenient. It’s heavy, the bag is ginormous, it can only be taken apart in two parts, and can’t easily be placed anywhere. And I was right; it is inconvenient, but the joy you feel when you hear the melody it produces cancels out all its flaws. Though to be honest, it's been giving me back problems lately, but it's fine anything for my beloved saxophone. </p>
+
+  <p class="hidden">  As of now it’s been three years since I joined the band. I tried my luck and tried to get into the BPSU Brass Band, but unfortunately I didn’t get in. As of now I’m focusing on my acads and my other responsibilities. I want to enjoy my life as a college student to the fullest. I think that’s what is happening right now, thanks to the friends I made along the way while battling the college struggles that everyone has been facing everyday. I wouldn’t be the yapper that I am today without them. I hope to experience more joys and less sorrows together with them. Padayon Bumpers! malayo pa pero malayo na. </p>
+
+<button id="toggleButton" onclick="toggleAllParagraphs()">Show More</button>
+
+</body>
+</html>

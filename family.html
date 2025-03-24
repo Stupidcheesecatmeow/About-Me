@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function toggleParagraph(button) {
+            var paragraphs = button.parentNode.querySelectorAll('.hidden');
+            var allVisible = Array.from(paragraphs).every(p => p.style.display === "block"); 
+
+            paragraphs.forEach(paragraph => {
+                paragraph.style.display = allVisible ? "none" : "block"; 
+            });
+            button.innerText = allVisible ? "Show More" : "Show Less"; 
+        }
+ </script>
+</head>
+<body>
+   <nav>
+   <a href="index.html">About Me</a> 
+   <a href="likes.html">My Likes</a> 
+   <a href="friends.html">My Friends</a> 
+   <a href="places.html">My Places</a>
+ </nav>
+    <h1>My Family</h1>
+   
+    <h2>My Mother</h2>
+    <br>
+    <img src="c:\Users\Jebi\Downloads\Mame.jpg" alt="Mame"/>
+    <br>
+    
+  <div>
+    <p class="hidden">My mom is honestly the best! She’s always there for me, no matter what’s going on. I really appreciate all the sacrifices she’s made for me—she always puts my needs first, and it means so much. I don’t know what I’d do without her.</p>
+    <p class="hidden">One of the things I love about my mom is that she can talk a lot, just like me. Whenever I come home from university, we gossip and catch up on everything. It’s like our special time together, and we have so much fun laughing and sharing stories. Those chats really help me feel connected again after being away from home.</p>
+    <p class="hidden">She’s taught me pretty much everything I know growing up, from important life lessons to all those little skills that come in handy. I’m super grateful for all the wisdom she’s shared with me. My mom has shaped who I am today, and I’m proud to be her kid. No matter what happens in life, I know she’ll always be in my corner, cheering me on.</p>
+      <button onclick="toggleParagraph(this)">Show More</button>
+  </div>
+
+    <h2>My Father</h2>
+    <br>
+    <img src="c:\Users\Jebi\Downloads\Dade.jpg" alt="Dade" />
+    <br>
+    
+  <div>
+    <p class="hidden">My dad is a unique guy with quite a history. He served in politics for 13 years, which taught him a lot about leadership and responsibility. But he’s not just a politician; he’s also a fisherman at heart. I’ve always admired his ability to balance these two worlds, and now he’s working alongside my mom to manage our beach resort. It’s a family-run business, and seeing them work together to build something special is really inspiring.</p>
+    <p class="hidden">One thing about my dad is that he has this nonchalant vibe—he takes things as they come and doesn’t let much get under his skin. However, he’s not the best at showing his emotions. Sometimes it can be hard to read how he feels because he keeps things pretty close to the vest. I think I inherited a little bit of his temper, which can be a challenge, but I know it comes from a place of caring.</p>
+    <p class="hidden">Even with his tough exterior, my dad has a really nice side, especially when it comes to our townspeople. He’s always willing to lend a helping hand, and he takes the time to connect with everyone in our community. It’s heartwarming to see how much respect and admiration they have for him. He may not express his feelings outwardly, but his actions speak volumes. I’m proud to have him as my dad, and I’ve learned a lot from him about hard work, dedication, and being there for others.</p>
+      <button onclick="toggleParagraph(this)">Show More</button>
+  </div>
+
+    <h2>My Sister</h2>
+    <br>
+    <img src="c:\Users\Jebi\Downloads\Cindy.jpg" alt="Cindy"/>
+    <br>
+  
+  <div>
+    <p class="hidden">Having my sister around is seriously one of the best things ever. She’s not just my sister; she’s also like my best friend, even though we have sibling fights from time to time. We spend tons of time laughing together, sharing funny stories, and binge-watching all our favorite shows. I love our late-night chats where we just talk about everything and anything. It’s like we have our own little world, and I wouldn’t trade that for anything—she gets me like no one else does.</p>
+    <p class="hidden">One of the coolest things about my sister is how she supports me with my studies. She’s been there for me in a big way when it comes to school. It honestly means so much that she helps me out financially so I can focus on my education. I know it’s not easy for her, and I really appreciate all the sacrifices she makes to make sure I can chase my dreams. Her belief in me is super motivating, and I want to make her proud by doing well in school.</p>
+    <p class="hidden">Plus, she’s always checking in on me to see how my classes are going, and sometimes she even helps me study. It feels awesome to know I have her support, and it makes tackling tough subjects so much easier. I’m really lucky to have such a caring sister in my life, and I can't wait to see what the future holds for both of us.</p>
+      <button onclick="toggleParagraph(this)">Show More</button>
+  </div>
+
+     <h2>My Brother</h2>
+     <br>
+   <img src="c:\Users\Jebi\Downloads\Renz.jpg" alt="Renz" />
+    <br>
+
+  <div>
+    <p class="hidden">Kuba is honestly one of the most entertaining people I know. He has this amazing sense of humor that can make anyone laugh, even on the most stressful days. No matter what’s going on, he always finds a way to crack a joke or share a funny story that lifts everyone’s spirits. His playful nature added so much fun to our family when he lived with us, and I miss having those moments with him now that he has his own family.</p>
+    <p class="hidden">Even though he doesn’t live with us anymore, I still admire Kuba for being super street smart. He has a natural knack for navigating tough situations and figuring things out on the fly. It’s impressive to see how he approaches challenges with confidence, whether it’s managing his family responsibilities or dealing with everyday life. Whenever I have a problem, I know I can turn to him for advice, and he always seems to know what to do.</p>
+    <p class="hidden">On top of all that, Kuba is a hard worker. He puts in long hours to provide for his family and is dedicated to taking care of them. I respect how committed he is to achieving his goals and making sure everything runs smoothly at home. He’s not just my brother; he’s a role model for me, showing me the importance of humor, intelligence, and hard work. Even though we might not see each other as often, I cherish our bond and the lessons he shares with me.</p>
+      <button onclick="toggleParagraph(this)">Show More</button>
+  </div>
+
+  <h2>My Brother</h2>
+  <br>
+   <img src="c:\Users\Jebi\Downloads\BJ.jpg" alt="BJ" />
+    <br>
+
+  <div>
+    <p class="hidden">Diko is my other brother, and even though he lives far away now with his own family, he still manages to stay a big part of my life. He’s definitely the strict sibling among us, always keeping things in line and making sure we never stray too far off track. I really admire how responsible he is, especially since he’s balancing work and taking care of his two little boys, both of whom are filled with energy and curiosity. It’s awesome to see him as a dad; he’s really good at it.</p>
+    <p class="hidden">One of the coolest things about Diko is that he was in a band before, and now I’ve joined in too. Music has always been a big part of our lives, and it’s amazing to carry on that family tradition with him. Playing music together brings back so many good memories, and I cherish those moments when we can share our passion for it, even if we’re miles apart. He often gives me advice on my playing, and I love learning from him.</p>
+    <p class="hidden">Not only is Diko a great brother and a fantastic musician, but he also cooks really well. His meals are delicious, and I always look forward to whenever he shares his latest creations via video calls or when I visit. He enjoys experimenting in the kitchen, and his cooking talents definitely add to our family gatherings. He also enjoys teasing me a lot, and even though it can get annoying, I know it’s all in good fun. We often laugh about how we used to get scolded by our mom together when we were kids, which strengthens our bond. No matter the distance, I always feel like I have my brother by my side, cheering me on and keeping me grounded.</p>
+      <button onclick="toggleParagraph(this)">Show More</button>
+  </div>
+
+</body>
+</html>

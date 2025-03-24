@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Place</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function toggleParagraph(button) {
+            var paragraphs = button.parentNode.querySelectorAll('.hidden');
+            var allVisible = Array.from(paragraphs).every(p => p.style.display === "block"); 
+
+            paragraphs.forEach(paragraph => {
+                paragraph.style.display = allVisible ? "none" : "block"; 
+            });
+            button.innerText = allVisible ? "Show More" : "Show Less"; 
+        }
+ </script>
+</head>
+<body>
+  
+    <nav>
+      <a href="index.html">About Me</a> 
+      <a href="family.html">My Family</a> 
+      <a href="likes.html">My Likes</a> 
+      <a href="friends.html">My Friends</a>
+    </nav>
+    
+    <h1>My Place</h1>
+    
+    <h2>The Beach</h2>
+    <br>
+    <img src="c:\Users\Jebi\Downloads\Beach.jpg" alt="Beach"/>
+    <br>
+  
+  <div>
+    <p class="hidden">The beach is a super cool place where the land meets the ocean, and it’s a spot everyone loves to hang out. The soft golden sand feels nice under your feet, and on a sunny day, it sparkles just like a giant treasure. When the waves roll in and crash onto the shore, it sounds like nature’s own music, while seagulls fly around, making their funny noises. Being at the beach is so relaxing, especially when the sun warms you up and a light breeze keeps things cool. It’s the perfect escape from all the stress of school and homework, letting you chill and enjoy the outdoors.</p>
+    <p class="hidden">At the beach, you can see families doing all kinds of fun stuff. Kids are busy building sandcastles that look like tiny forts or playing beach volleyball, while other people are just soaking up the sun on their colorful towels, reading books or listening to music. Some people like to jump into the water and splash around, while others take walks along the sand, watching the waves come and go. There’s such a fun vibe, with laughter and chatter all around, making it a great place to hang out with friends. Best of all, as the day goes on, the beach gets even prettier, with the sunset painting the sky in awesome shades of orange and pink.</p>
+    <p class="hidden">When evening hits, the beach turns into a magical place. As the sun sinks down, the water glows, and everything feels kind of special. Sometimes, you’ll see groups of friends gathered around bonfires, telling stories or roasting marshmallows for s'mores. The sound of the waves crashing becomes even more relaxing, making it a perfect backdrop for chilling out. Whether you’re taking a romantic walk or just having a great time with friends, the beach is always a fun spot to be, creating memories that you’ll remember long after you’ve left.</p>
+      <button onclick="toggleParagraph(this)">Show More</button>
+  </div>
+
+    <h2>Jollibee</h2>
+    <br>
+    <img src="c:\Users\Jebi\Downloads\Jabi.jpg" alt="Jabi"/>
+    <br>
+
+  <div>
+      <p class="hidden">Jollibee is this super popular fast-food chain that everyone loves, especially in the Philippines. It’s famous for its cute mascot, a happy bee dressed in red and yellow, making it a fun place to visit. The best part about Jollibee is definitely their Chickenjoy – it’s this delicious fried chicken that's crispy on the outside and juicy on the inside. You can get it with some savory gravy, and trust me, it’s a total game-changer! There’s just something special about Jollibee that makes it the perfect hangout spot for friends and families, especially when you want to grab a quick bite in a cheerful atmosphere.</p>
+      <p class="hidden">Aside from Chickenjoy, Jollibee has a bunch of other tasty options that make it stand out from other fast-food places. For example, their Jolly Spaghetti is kind of sweet and savory, topped with hotdogs and cheese, which is pretty unique. They also have burger steak with rice that’s packed with flavor and comes with yummy mushroom gravy—a combo that’s hard to resist. The menu has something for everyone, and the vibe is super family-friendly, with bright colors and cool music playing that keeps people entertained. It’s famous for being the go-to place for birthday parties and special celebrations, adding to all the fun memories people have there.</p>
+      <p class="hidden">Jollibee isn’t just a local favorite anymore; it has branches all over the world, so people everywhere can enjoy their food. Every Jollibee spot feels just as fun and welcoming, making you feel right at home no matter where you are. They also offer online ordering and delivery, which is awesome for those lazy days when you just want some comfort food. By sticking to their quality food and creating a fun experience, Jollibee has become more than just a fast-food chain; it’s like a little piece of Filipino pride and happiness. Whether you’re out with friends or celebrating with family, Jollibee always brings that joyful vibe that makes meals unforgettable.</p>
+        <button onclick="toggleParagraph(this)">Show More</button>
+  </div>
+
+    <h2>Playground</h2>
+    <br>
+    <img src="c:\Users\Jebi\Downloads\Playground.jpg" alt="Playground"/>
+    <br>
+
+  <div>
+      <p class="hidden">A playground is this really fun place where kids can go to play and hang out with their friends. You can find them in parks, schools, or community centers, and they’re packed with all sorts of cool stuff. From swings that let you feel like you’re flying to slides that give you a rush as you zip down, playgrounds have everything you need to have a blast. The bright colors of the equipment make everything look cheerful and inviting, catching the eye of anyone passing by. Plus, they usually have soft surfaces like rubber mats or sand to keep kids safe if they happen to take a tumble.</p>
+      <p class="hidden">Besides the classic swings and slides, many playgrounds have unique features that make them super interesting. Check out the sandboxes where kids can dig and build their dream castles, or interactive panels that get everyone working together to solve puzzles and play games. Some playgrounds even have themes, like pirate ships or jungle gyms, turning playtime into an exciting adventure. These areas help kids develop important skills like balancing and climbing, and they learn how to play nicely with others while having tons of fun.</p>
+      <p class="hidden">Playgrounds are way more than just a place to goof around; they’re really important for helping kids grow and stay healthy. When kids play outside, they get to burn off energy and stay fit, which is super important in today’s world where everyone is glued to their screens. It’s also a great way to make friends and build social skills as you laugh and compete together on different equipment. Whether it’s racing to the top of the climbing frame or just chilling on the swings, playgrounds create awesome memories and allow kids to be themselves, helping shape happy and confident individuals.</p>
+        <button onclick="toggleParagraph(this)">Show More</button>
+  </div>
+    
+    <h2>Medina Lacson De Leon Building</h2>
+    <br>
+    <img src="c:\Users\Jebi\Downloads\Medina.jpg" alt="Medina"/>
+    <br>
+
+  <div>
+      <p class="hidden">The Medina Lacson Building is one of the notable structures within the Bataan Peninsula State University (BPSU) Main campus. Located in the province of Bataan in the Philippines, BPSU serves as an educational hub that provides a range of academic programs and facilities. The building is named after a prominent figure in the area, reflecting its significance and connection to the university's history and mission.</p>
+      <p class="hidden">The Medina Lacson Building hosts various academic and administrative offices, classrooms, and facilities designed to support the educational needs of the students. It is designed to provide a conducive learning environment, equipped with modern amenities to facilitate both teaching and learning. The architecture of the building is typically functional and purposeful, aligning with the university's commitment to providing quality education in a comfortable setting.</p>
+      <p class="hidden">Within the Medina Lacson Building, students from the College of Computer Science and Technology have access to various facilities that cater to their academic needs. These may include classrooms equipped with modern technology, computer labs for hands-on learning, and spaces for group projects and collaborations. By situating the CCST office in this building, BPSU enhances the accessibility of essential resources for students pursuing degrees in computer science and technology, ensuring they have the tools needed for success in their educational journey.</p>
+        <button onclick="toggleParagraph(this)">Show More</button>
+  </div>
+
+    <h2>Ace Hardware</h2>
+    <br>
+    <img src="c:\Users\Jebi\Downloads\Ace.jpg" alt="Ace"/>
+    <br>
+
+<div>
+    <p class="hidden">Ace Hardware is a popular store that’s basically a one-stop shop for all your hardware and home improvement needs. It’s known for having super friendly staff who actually know what they’re talking about, making it a great place to go whether you’re a DIY expert or just trying to fix that leaky faucet for the first time. When you walk inside, you’ll see tons of tools, paints, lawn care stuff, and all sorts of supplies for home repairs. The store is laid out really well, so it’s easy to find what you need without wasting time wandering around. Plus, their focus on quality products means you’re not just getting junk when you shop there.</p>
+    <p class="hidden">What’s really cool about Ace Hardware is that many of the stores are locally owned. This means they can stock items that are best for the community, which is awesome because it makes shopping there feel personal. The staff at these stores often build strong relationships with their customers, which makes people want to come back. Ace also puts on workshops and events to teach people new skills for their home improvement projects, which is super helpful. It’s nice to see a store that really cares about its customers and the community it serves.</p>
+    <p class="hidden">Ace Hardware also tries to be more environmentally friendly, which is something a lot of people appreciate today. They offer eco-friendly products like paints and cleaners that are better for the planet, which is a big plus. Some stores even have recycling programs for stuff like batteries and used paint, so you can dispose of things properly. Overall, Ace Hardware combines great products, awesome customer service, and a focus on the community to create a shopping experience that feels unique and welcoming, making it a go-to place for lots of people.</p>
+      <button onclick="toggleParagraph(this)">Show More</button>
+</div>
+
+</body>
+</html>

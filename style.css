@@ -1,0 +1,108 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #c8d9f0; 
+    color: #333; 
+    text-align: center; 
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+nav {
+    display: flex; 
+    justify-content: center; 
+    padding: 20px 0; 
+}
+
+nav a { 
+    display: inline-block; 
+    color: white; 
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 18px; 
+    border-radius: 50px; 
+    background: linear-gradient(270deg, #d2c6e8, #2a2851, rgb(117, 190, 238), #5167b0); 
+    background-size: 400% 400%; 
+    transition: transform 0.3s; 
+    margin: 0 10px; 
+}
+
+nav a:hover {
+    animation: gradient-animation 8s ease infinite; 
+    transform: scale(1.05); 
+}
+
+@media (max-width: 600px) {
+    nav a {
+        font-size: 16px; 
+        padding: 10px 20px; 
+    }
+}
+
+h1 {
+    margin-top: 20px; 
+}
+
+h2 {
+    margin-top: 20px; 
+}
+
+img {
+    max-width: 300px; 
+    height: auto; 
+    margin: 15px 0;
+    border-radius: 50px;
+}
+
+video {
+    max-width: 300px;
+    height: auto;
+    margin: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline;
+}
+
+p {
+    text-align: left; 
+    max-width: 750px; 
+    margin: 10px auto; 
+    padding: 10px; 
+    background-color: #edd3dd; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    font-size: 20px;
+    text-indent: 40px;
+}
+button {
+    display: inline-block;
+    padding: 15px 30px; 
+    font-size: 18px; 
+    border-radius: 50px; 
+    background: linear-gradient(270deg, #9979d5, #2a2851, rgb(117, 190, 238), #5167b0); 
+    color: white;
+    cursor: pointer;
+    background-size: 400% 400%; 
+    text-decoration: none; 
+    transition: transform 0.5s; 
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 25px 25px;
+    border: none;
+}
+
+button:hover {
+    animation: gradient-animation 8s ease infinite; 
+    transform: scale(1.05); 
+}
+.hidden {
+    display: none;
+}
